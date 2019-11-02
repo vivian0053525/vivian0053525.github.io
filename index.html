@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>我的網頁</title>
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+    <!-- Main css -->
+    <link href="css/style.css" rel="stylesheet">
+</head>
+
+<body>
+    <!-- 網頁抬頭選單 -->
+    <header>
+            <nav class="navbar navbar-light navbar-expand-md py-3 fixed-top"
+            style="background:#ffffff; color:#443737; font-size: 18px; ">
+            <div class="container">
+                <!-- LOGO -->
+                <a href="#" class="navbar-brand">
+                    <img src="sum37/logo01.png" alt="logo" />
+                </a>
+                <!-- 手機選單漢堡按鈕 -->
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-collapse">
+          <!-- 漢堡ICON -->
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+                <!-- 選單內容 -->
+                <div id="navbar-collapse" class="collapse navbar-collapse">
+                    <ul class="navbar-nav ml-auto">
+                        <li><a href="#product" class="nav-link">首頁</a></li>
+                        <li><a href="#video" class="nav-link">品牌介紹</a></li>
+                        <li><a href="#creative" class="nav-link">產品類型</a></li>
+                        <li><a href="#activity" class="nav-link">聯絡我們</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- 可以輪播的Banner圖片 -->
+    <section id="product">
+        <div id="carousel-controller" class="carousel slide" data-ride="carousel">
+            <!-- 輪播圖片 -->
+            <div class="carousel-inner">
+                <!-- 圖片1 -->
+                <div class="carousel-item active">
+                    <img class="w-100" src="sum37/01-1.png" alt="">
+                </div>
+                <!-- 圖片2 -->
+                <div class="carousel-item">
+                    <img class="w-100" src="sum37/02-2.png" alt="">   
+                </div>
+                <!-- 圖片3 -->
+                <div class="carousel-item">
+                    <img class="w-100" src="sum37/03-3.png" alt="">
+                </div>
+            </div>
+            <!-- 圖片上一頁按鈕 -->
+            <a href="#carousel-controller" data-slide="prev" class="carousel-control-prev">
+                <span class="carousel-control-prev-icon"></span>
+            </a>
+            <!-- 圖片下一頁按鈕 -->
+            <a href="#carousel-controller" data-slide="next" class=" carousel-control-next">
+                <span class="carousel-control-next-icon"></span>
+            </a>
+
+            <!-- 下方點點 -->
+            <ol class="carousel-indicators">
+                <li data-target="#carousel-controller" data-slide-to="0" class="active"></li>
+                <li data-target="#carousel-controller" data-slide-to="1"></li>
+                <li data-target="#carousel-controller" data-slide-to="2"></li>
+            </ol>
+        </div>
+    </section>
+
+    <!-- 商品文案 -->
+    <section>
+        <div class="container">
+            <div class="row">
+                <div class="article_text">
+                    <h3>自然發酵的肌膚保養品—su:m37°</h3>
+                    <p>所有產品中都富含核心成分 Cytosis</br>
+                        春、夏、秋、冬，</br>
+                        經歷四季蒐羅來自大自然 86 種植物，</br>
+                        採集根、莖、葉、花、果實、種子等最富有能量的部位，</br>
+                        在最純淨無汙染的韓國江原道</br>
+                        su:m37° 自然發酵研究所分別進行發酵，</br>
+                        周圍 10公里內無任何人為設施建築，</br>
+                        維持最適合酵母生長的純淨環境。</br>
+                    </p>
+                    <h3>Slow is beautiful「慢即是美」</h3>
+                    <p>發酵室地板以富有淨化功效的黑炭做鋪疊，</br>
+                        並使用橡木桶、山木桶和陶器等傳統發酵器具，</br>
+                        結合風(空氣)、土(地氣)、水(濕度)、火(溫度)等自然元素，</br>
+                        經過長時間發酵完成取得各種天然酵母，</br>
+                        再以 su:m37° 獨家技術與 31 種微生物加以調和，</br>
+                        再經過 365 天靜置等待。
+                    </p>
+                    
+                    <p>經過漫長而富有生命力的自然發酵過程，</br>
+                        su:m37° 珍貴的「複方酵母」成分— Cytosis 就此誕生！</br>
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <!-- 背景影片 -->
+        <section class="containe video-area" id="video"></section>
+        <div class="container">
+            <video autoplay muted loop id="myVideo">
+        <source src="video/車主編鍾碩夏日消暑秘訣.mp4" type="video/mp4">
+      </video>
+        </div>
+    </section>
+
+    
+
+    <!-- 產品介紹區塊(創意) -->
+    <section id="creative" class="creative_area">
+        <div class="container">
+            <h2 class="text-center">
+                呵護您的肌膚
+            </h2>
+            <!-- 產品照片 -->
+
+            <!-- 照片大張01 -->
+            <div class="card">
+                <a href="#"><img alt="產品照片很多" src="sum37/04.jpg">
+                </a>
+                <h2 class="text-center">
+                    
+                </h2>
+                <!-- 照片大張02 -->
+            <div class="card">
+                <a href="#"><img alt="產品照片很多" src="sum37/05.jpg">
+                </a>
+
+            <h2 class="text-center">
+                產品類型
+            </h2>
+            <div class="row">
+                <!-- 照片組1 -->
+                <div class="col">
+                    <div class="card">
+                        <a href="#"><img alt="產品照片1" src="sum37/010.png">
+                            <div class="card-title-wrap">
+                                <span class="card-title">人氣商品</span>
+                            </div>
+                            <div class="pic-hover">
+                                <h4>熱門排行商品</h4>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <!-- 照片組2 -->
+                <div class="col">
+                    <div class="card">
+                        <a href="#"><img alt="產品照片2" src="sum37/09.png">
+                            <div class="card-title-wrap">
+                                <span class="card-title">保濕亮白</span>
+                            </div>
+                            <div class="pic-hover">
+                                <h4>青春活酵系列</h4>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <!-- 照片組3 -->
+                <div class="col">
+                    <div class="card">
+                        <a href="#"><img alt="產品照片3" src="sum37/08.png">
+                            <div class="card-title-wrap">
+                                <span class="card-title">緊緻抗老</span>
+                            </div>
+                            <div class="pic-hover">
+                                <h4>金萃極致無痕系列</h4>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+<!-- 品牌介紹 -->
+    <div class="ex3-box">
+        <div class="ex3-img">
+        <a href="#"><img alt="品牌介紹" src="sum37/014.png">
+
+        </a>
+    </div>
+<!-- 影片 -->
+<section class="containe video-area" id="video">
+    <div class="video-container">
+        <iframe width="640" height="360" src="video/Sequence 01.mp4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
+</section>
+
+
+
+
+    <!-- 頁腳 -->
+    <footer class="footer">
+
+        <div class="container">
+            <div class="row">
+                <div class="col-md-8 col-sm-12 footer_logo">
+                    <img src="sum37/logo01.png">
+                </div>
+                <div class="col-md-4 col-sm-12 footer_address">
+                    <ul>
+                        <li>LINE：vivian55999</li>
+                        <li>IG:TEA930</li>
+                        <li>E-MAIL：vivian55999@yahoo.com.tw</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="row footer_copyright justify-content-center">
+                <p>su:m37°帶給你不同的天然美好</p>
+            </div>
+        </div>
+
+    </footer>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+
+    <script src=" https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous">
+    </script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous">
+    </script>
+
+    <script src="js/back_top.js"></script>
+</body>
+
+</html>
